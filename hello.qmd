@@ -20,12 +20,20 @@ library(tidyverse)
 library(ggplot2)
 library(shinyWidgets)
 library(shiny)
+library(leaflet)
 
 global_energy <- read_csv("owid-energy-data.csv")
+countreis <- read_csv("Book1.csv")
 ```
 
 ```{r}
 #| echo: false
+
+selectInput(
+  inputId = "id2",
+  label = "Y-axis variable:",
+  choices = colnames(global_energy)
+)
 
 multiInput(
    inputId = "Id010",
@@ -42,7 +50,7 @@ multiInput(
 ```{r}
 #| echo: false
 
-countries <- c("United States")
+graphing <- function(countries){
 
 graph <- global_energy |>
   filter(country %in% countries) |>
@@ -53,12 +61,20 @@ graph <- global_energy |>
   geom_smooth(method = "glm", show.legend = FALSE, fullrange = TRUE) 
 
 ggplotly(graph)
+}
 ```
+
 
 ```{r}
 #| echo: false
 
-observeEvent(global_energy$country, {
-  graph$data <- global_energy$country
-}, ignoreInit = TRUE) -> countries
+basemap <- leaflet() |>
+  addProviderTiles(
+    "CartoDB.Positron",
+    group = "CartoDB.Positron"
+  ) |>
+  addTiles() |>
+  addMarkers(lng = countreis$longitude, lat = countreis$latitude, popup = graphing(countreis$name))
+
+basemap
 ```
