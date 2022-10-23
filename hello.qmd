@@ -29,7 +29,7 @@ countreis <- read_csv("Book1.csv")
 ```{r}
 #| echo: false
 
-selectInput(
+  selectInput(
   inputId = "id2",
   label = "Y-axis variable:",
   choices = colnames(global_energy)
@@ -50,7 +50,7 @@ multiInput(
 ```{r}
 #| echo: false
 
-graphing <- function(countries){
+countries <- c("United States")
 
 graph <- global_energy |>
   filter(country %in% countries) |>
@@ -61,7 +61,6 @@ graph <- global_energy |>
   geom_smooth(method = "glm", show.legend = FALSE, fullrange = TRUE) 
 
 ggplotly(graph)
-}
 ```
 
 
@@ -74,7 +73,7 @@ basemap <- leaflet() |>
     group = "CartoDB.Positron"
   ) |>
   addTiles() |>
-  addMarkers(lng = countreis$longitude, lat = countreis$latitude, popup = graphing(countreis$name))
+  addMarkers(lng = countreis$longitude, lat = countreis$latitude, popup = countreis$name)
 
 basemap
 ```
