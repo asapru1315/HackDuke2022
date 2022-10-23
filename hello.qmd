@@ -1,0 +1,64 @@
+---
+title: "World Energy Demise"
+author: "Anmol Sapru, Zuhare Ali, and Claudio Fischer"
+format: html
+editor: visual
+order: 1
+fontcolor: "red"
+backgroundcolor: "black"
+---
+
+![](Screen%20Shot%202022-10-22%20at%207.01.05%20PM.png)
+
+```{r}
+#| label: load-packages
+#| echo: false
+#| warning: false
+
+library(plotly)
+library(tidyverse)
+library(ggplot2)
+library(shinyWidgets)
+library(shiny)
+
+global_energy <- read_csv("owid-energy-data.csv")
+```
+
+```{r}
+#| echo: false
+
+multiInput(
+   inputId = "Id010",
+   label = "Countries:", 
+    choices = unique(global_energy$country),
+   choiceNames = lapply(seq_along(countries), 
+        function(i) tagList(tags$img(src = flags[i],
+   width = 20, 
+            height = 50), countries[i])),
+   choiceValues = countries
+)
+```
+
+```{r}
+#| echo: false
+
+countries <- c("United States")
+
+graph <- global_energy |>
+  filter(country %in% countries) |>
+  ggplot(aes(x = year, 
+             y = carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour, 
+             color = country)) +
+  geom_point(aes(size = real_gross_domestic_product), show.legend = FALSE) +
+  geom_smooth(method = "glm", show.legend = FALSE, fullrange = TRUE) 
+
+ggplotly(graph)
+```
+
+```{r}
+#| echo: false
+
+observeEvent(global_energy$country, {
+  graph$data <- global_energy$country
+}, ignoreInit = TRUE) -> countries
+```

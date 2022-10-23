@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Anmol Sapru, Zuhare Ali, and Claudio Fischer">
+
+<title>World Energy Demise</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="hello_files/libs/clipboard/clipboard.min.js"></script>
+<script src="hello_files/libs/quarto-html/quarto.js"></script>
+<script src="hello_files/libs/quarto-html/popper.min.js"></script>
+<script src="hello_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="hello_files/libs/quarto-html/anchor.min.js"></script>
+<link href="hello_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="hello_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="hello_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="hello_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="hello_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="hello_files/libs/multi-0.5.3/multi.js"></script>
+<script src="hello_files/libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="hello_files/libs/plotly-binding-4.10.0/plotly.js"></script>
+<script src="hello_files/libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="hello_files/libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="hello_files/libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="hello_files/libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="hello_files/libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="hello_files/libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">World Energy Demise</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Anmol Sapru, Zuhare Ali, and Claudio Fischer </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header>
+
+<p><img src="Screen%20Shot%202022-10-22%20at%207.01.05%20PM.png" class="img-fluid"></p>
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label id="Id010-label" class="control-label" for="Id010">Countries:</label>
+<select id="Id010" multiple="multiple" class="form-control multijs">
+<option value="Afghanistan">Afghanistan</option>
+<option value="Africa">Africa</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="Angola">Angola</option>
+<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Asia">Asia</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bermuda">Bermuda</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Botswana">Botswana</option>
+<option value="Brazil">Brazil</option>
+<option value="Brunei">Brunei</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Cape Verde">Cape Verde</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Chad">Chad</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Colombia">Colombia</option>
+<option value="Comoros">Comoros</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Cote d'Ivoire">Cote d'Ivoire</option>
+<option value="Croatia">Croatia</option>
+<option value="Cuba">Cuba</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czechia">Czechia</option>
+<option value="Democratic Republic of Congo">Democratic Republic of Congo</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Eswatini">Eswatini</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Europe">Europe</option>
+<option value="European Union">European Union</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="French Guiana">French Guiana</option>
+<option value="French Polynesia">French Polynesia</option>
+<option value="G20">G20</option>
+<option value="G7">G7</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Greece">Greece</option>
+<option value="Greenland">Greenland</option>
+<option value="Grenada">Grenada</option>
+<option value="Guam">Guam</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guinea">Guinea</option>
+<option value="Guinea-Bissau">Guinea-Bissau</option>
+<option value="Guyana">Guyana</option>
+<option value="Haiti">Haiti</option>
+<option value="High-income countries">High-income countries</option>
+<option value="Honduras">Honduras</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran">Iran</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="Kosovo">Kosovo</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Laos">Laos</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libya">Libya</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Low-income countries">Low-income countries</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Macao">Macao</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Martinique">Martinique</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mexico">Mexico</option>
+<option value="Micronesia">Micronesia</option>
+<option value="Moldova">Moldova</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montenegro">Montenegro</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Namibia">Namibia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="North America">North America</option>
+<option value="North Korea">North Korea</option>
+<option value="North Macedonia">North Macedonia</option>
+<option value="Norway">Norway</option>
+<option value="Oceania">Oceania</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palestine">Palestine</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Qatar">Qatar</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russia</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+<option value="Saint Lucia">Saint Lucia</option>
+<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+<option value="Samoa">Samoa</option>
+<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Serbia">Serbia</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Somalia">Somalia</option>
+<option value="South Africa">South Africa</option>
+<option value="South America">South America</option>
+<option value="South Korea">South Korea</option>
+<option value="South Sudan">South Sudan</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Sudan">Sudan</option>
+<option value="Suriname">Suriname</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syria">Syria</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Thailand">Thailand</option>
+<option value="Timor">Timor</option>
+<option value="Togo">Togo</option>
+<option value="Tonga">Tonga</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Uruguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Vietnam">Vietnam</option>
+<option value="Western Sahara">Western Sahara</option>
+<option value="Yemen">Yemen</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option>
+</select>
+<script type="application/json" data-for="Id010">{}</script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="htmlwidget-d947083378b8e6716534" style="width:100%;height:464px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d947083378b8e6716534">{"x":{"data":[{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021],"y":[499.727,500.85,492.456,497.378,493.856,495.208,487.68,490.688,485.027,464.777,469.334,453.639,440.986,440.742,438.652,420.386,403.693,392.519,388.023,370.247,348.543,357.202],"text":["year: 2000<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 499.727<br />country: United States<br />real_gross_domestic_product: 1.30e+13","year: 2001<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 500.850<br />country: United States<br />real_gross_domestic_product: 1.31e+13","year: 2002<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 492.456<br />country: United States<br />real_gross_domestic_product: 1.33e+13","year: 2003<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 497.378<br />country: United States<br />real_gross_domestic_product: 1.37e+13","year: 2004<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 493.856<br />country: United States<br />real_gross_domestic_product: 1.42e+13","year: 2005<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 495.208<br />country: United States<br />real_gross_domestic_product: 1.47e+13","year: 2006<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 487.680<br />country: United States<br />real_gross_domestic_product: 1.51e+13","year: 2007<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 490.688<br />country: United States<br />real_gross_domestic_product: 1.54e+13","year: 2008<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 485.027<br />country: United States<br />real_gross_domestic_product: 1.53e+13","year: 2009<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 464.777<br />country: United States<br />real_gross_domestic_product: 1.49e+13","year: 2010<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 469.334<br />country: United States<br />real_gross_domestic_product: 1.53e+13","year: 2011<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 453.639<br />country: United States<br />real_gross_domestic_product: 1.55e+13","year: 2012<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 440.986<br />country: United States<br />real_gross_domestic_product: 1.58e+13","year: 2013<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 440.742<br />country: United States<br />real_gross_domestic_product: 1.61e+13","year: 2014<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 438.652<br />country: United States<br />real_gross_domestic_product: 1.65e+13","year: 2015<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 420.386<br />country: United States<br />real_gross_domestic_product: 1.69e+13","year: 2016<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 403.693<br />country: United States<br />real_gross_domestic_product: 1.72e+13","year: 2017<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 392.519<br />country: United States<br />real_gross_domestic_product: 1.76e+13","year: 2018<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 388.023<br />country: United States<br />real_gross_domestic_product: 1.81e+13","year: 2019<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 370.247<br />country: United States<br />real_gross_domestic_product:       NA","year: 2020<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 348.543<br />country: United States<br />real_gross_domestic_product:       NA","year: 2021<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 357.202<br />country: United States<br />real_gross_domestic_product:       NA"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":1,"size":[3.77952755905512,6.42572614304506,8.36287795344251,10.7807109319838,12.9462283478299,14.6900838272055,15.905932874074,16.7432001367566,16.4702501450996,15.3140397712077,16.4702501450996,17.0105204790048,17.7818943049124,18.5129377319656,19.4346495038648,20.305032419437,20.928854418388,21.7269195565537,22.6771653543307,null,null,null],"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"United States","legendgroup":"United States","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2000,2000.26582278481,2000.53164556962,2000.79746835443,2001.06329113924,2001.32911392405,2001.59493670886,2001.86075949367,2002.12658227848,2002.39240506329,2002.6582278481,2002.92405063291,2003.18987341772,2003.45569620253,2003.72151898734,2003.98734177215,2004.25316455696,2004.51898734177,2004.78481012658,2005.05063291139,2005.3164556962,2005.58227848101,2005.84810126582,2006.11392405063,2006.37974683544,2006.64556962025,2006.91139240506,2007.17721518987,2007.44303797468,2007.70886075949,2007.9746835443,2008.24050632911,2008.50632911392,2008.77215189873,2009.03797468354,2009.30379746835,2009.56962025316,2009.83544303797,2010.10126582278,2010.36708860759,2010.63291139241,2010.89873417722,2011.16455696203,2011.43037974684,2011.69620253165,2011.96202531646,2012.22784810127,2012.49367088608,2012.75949367089,2013.0253164557,2013.29113924051,2013.55696202532,2013.82278481013,2014.08860759494,2014.35443037975,2014.62025316456,2014.88607594937,2015.15189873418,2015.41772151899,2015.6835443038,2015.94936708861,2016.21518987342,2016.48101265823,2016.74683544304,2017.01265822785,2017.27848101266,2017.54430379747,2017.81012658228,2018.07594936709,2018.3417721519,2018.60759493671,2018.87341772152,2019.13924050633,2019.40506329114,2019.67088607595,2019.93670886076,2020.20253164557,2020.46835443038,2020.73417721519,2021],"y":[525.194897233199,523.212532746284,521.230168259366,519.24780377245,517.265439285533,515.283074798617,513.3007103117,511.318345824784,509.335981337868,507.353616850951,505.371252364035,503.388887877119,501.4065233902,499.424158903284,497.441794416369,495.459429929453,493.477065442536,491.49470095562,489.512336468704,487.529971981787,485.547607494869,483.565243007954,481.582878521036,479.60051403412,477.618149547205,475.635785060287,473.653420573371,471.671056086456,469.688691599538,467.706327112621,465.723962625705,463.741598138789,461.759233651872,459.776869164956,457.794504678041,455.812140191123,453.829775704206,451.84741121729,449.865046730374,447.882682243457,445.900317756541,443.917953269625,441.935588782708,439.953224295792,437.970859808875,435.988495321957,434.006130835041,432.023766348126,430.04140186121,428.059037374293,426.076672887377,424.094308400461,422.111943913542,420.129579426626,418.14721493971,416.164850452793,414.182485965877,412.200121478962,410.217756992044,408.235392505128,406.253028018211,404.270663531295,402.288299044378,400.305934557462,398.323570070546,396.341205583629,394.358841096713,392.376476609797,390.39411212288,388.411747635962,386.429383149047,384.447018662131,382.464654175214,380.482289688298,378.499925201382,376.517560714465,374.535196227547,372.552831740632,370.570467253714,368.588102766798],"text":["year: 2000.000<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 525.1949<br />country: United States","year: 2000.266<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 523.2125<br />country: United States","year: 2000.532<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 521.2302<br />country: United States","year: 2000.797<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 519.2478<br />country: United States","year: 2001.063<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 517.2654<br />country: United States","year: 2001.329<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 515.2831<br />country: United States","year: 2001.595<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 513.3007<br />country: United States","year: 2001.861<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 511.3183<br />country: United States","year: 2002.127<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 509.3360<br />country: United States","year: 2002.392<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 507.3536<br />country: United States","year: 2002.658<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 505.3713<br />country: United States","year: 2002.924<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 503.3889<br />country: United States","year: 2003.190<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 501.4065<br />country: United States","year: 2003.456<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 499.4242<br />country: United States","year: 2003.722<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 497.4418<br />country: United States","year: 2003.987<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 495.4594<br />country: United States","year: 2004.253<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 493.4771<br />country: United States","year: 2004.519<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 491.4947<br />country: United States","year: 2004.785<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 489.5123<br />country: United States","year: 2005.051<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 487.5300<br />country: United States","year: 2005.316<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 485.5476<br />country: United States","year: 2005.582<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 483.5652<br />country: United States","year: 2005.848<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 481.5829<br />country: United States","year: 2006.114<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 479.6005<br />country: United States","year: 2006.380<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 477.6181<br />country: United States","year: 2006.646<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 475.6358<br />country: United States","year: 2006.911<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 473.6534<br />country: United States","year: 2007.177<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 471.6711<br />country: United States","year: 2007.443<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 469.6887<br />country: United States","year: 2007.709<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 467.7063<br />country: United States","year: 2007.975<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 465.7240<br />country: United States","year: 2008.241<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 463.7416<br />country: United States","year: 2008.506<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 461.7592<br />country: United States","year: 2008.772<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 459.7769<br />country: United States","year: 2009.038<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 457.7945<br />country: United States","year: 2009.304<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 455.8121<br />country: United States","year: 2009.570<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 453.8298<br />country: United States","year: 2009.835<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 451.8474<br />country: United States","year: 2010.101<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 449.8650<br />country: United States","year: 2010.367<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 447.8827<br />country: United States","year: 2010.633<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 445.9003<br />country: United States","year: 2010.899<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 443.9180<br />country: United States","year: 2011.165<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 441.9356<br />country: United States","year: 2011.430<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 439.9532<br />country: United States","year: 2011.696<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 437.9709<br />country: United States","year: 2011.962<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 435.9885<br />country: United States","year: 2012.228<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 434.0061<br />country: United States","year: 2012.494<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 432.0238<br />country: United States","year: 2012.759<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 430.0414<br />country: United States","year: 2013.025<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 428.0590<br />country: United States","year: 2013.291<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 426.0767<br />country: United States","year: 2013.557<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 424.0943<br />country: United States","year: 2013.823<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 422.1119<br />country: United States","year: 2014.089<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 420.1296<br />country: United States","year: 2014.354<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 418.1472<br />country: United States","year: 2014.620<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 416.1649<br />country: United States","year: 2014.886<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 414.1825<br />country: United States","year: 2015.152<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 412.2001<br />country: United States","year: 2015.418<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 410.2178<br />country: United States","year: 2015.684<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 408.2354<br />country: United States","year: 2015.949<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 406.2530<br />country: United States","year: 2016.215<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 404.2707<br />country: United States","year: 2016.481<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 402.2883<br />country: United States","year: 2016.747<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 400.3059<br />country: United States","year: 2017.013<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 398.3236<br />country: United States","year: 2017.278<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 396.3412<br />country: United States","year: 2017.544<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 394.3588<br />country: United States","year: 2017.810<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 392.3765<br />country: United States","year: 2018.076<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 390.3941<br />country: United States","year: 2018.342<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 388.4117<br />country: United States","year: 2018.608<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 386.4294<br />country: United States","year: 2018.873<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 384.4470<br />country: United States","year: 2019.139<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 382.4647<br />country: United States","year: 2019.405<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 380.4823<br />country: United States","year: 2019.671<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 378.4999<br />country: United States","year: 2019.937<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 376.5176<br />country: United States","year: 2020.203<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 374.5352<br />country: United States","year: 2020.468<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 372.5528<br />country: United States","year: 2020.734<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 370.5705<br />country: United States","year: 2021.000<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 368.5881<br />country: United States"],"type":"scatter","mode":"lines","name":"United States","line":{"width":3.77952755905512,"color":"rgba(248,118,109,1)","dash":"solid"},"hoveron":"points","legendgroup":"United States","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2000,2000.26582278481,2000.53164556962,2000.79746835443,2001.06329113924,2001.32911392405,2001.59493670886,2001.86075949367,2002.12658227848,2002.39240506329,2002.6582278481,2002.92405063291,2003.18987341772,2003.45569620253,2003.72151898734,2003.98734177215,2004.25316455696,2004.51898734177,2004.78481012658,2005.05063291139,2005.3164556962,2005.58227848101,2005.84810126582,2006.11392405063,2006.37974683544,2006.64556962025,2006.91139240506,2007.17721518987,2007.44303797468,2007.70886075949,2007.9746835443,2008.24050632911,2008.50632911392,2008.77215189873,2009.03797468354,2009.30379746835,2009.56962025316,2009.83544303797,2010.10126582278,2010.36708860759,2010.63291139241,2010.89873417722,2011.16455696203,2011.43037974684,2011.69620253165,2011.96202531646,2012.22784810127,2012.49367088608,2012.75949367089,2013.0253164557,2013.29113924051,2013.55696202532,2013.82278481013,2014.08860759494,2014.35443037975,2014.62025316456,2014.88607594937,2015.15189873418,2015.41772151899,2015.6835443038,2015.94936708861,2016.21518987342,2016.48101265823,2016.74683544304,2017.01265822785,2017.27848101266,2017.54430379747,2017.81012658228,2018.07594936709,2018.3417721519,2018.60759493671,2018.87341772152,2019.13924050633,2019.40506329114,2019.67088607595,2019.93670886076,2020.20253164557,2020.46835443038,2020.73417721519,2021,2021,2021,2020.73417721519,2020.46835443038,2020.20253164557,2019.93670886076,2019.67088607595,2019.40506329114,2019.13924050633,2018.87341772152,2018.60759493671,2018.3417721519,2018.07594936709,2017.81012658228,2017.54430379747,2017.27848101266,2017.01265822785,2016.74683544304,2016.48101265823,2016.21518987342,2015.94936708861,2015.6835443038,2015.41772151899,2015.15189873418,2014.88607594937,2014.62025316456,2014.35443037975,2014.08860759494,2013.82278481013,2013.55696202532,2013.29113924051,2013.0253164557,2012.75949367089,2012.49367088608,2012.22784810127,2011.96202531646,2011.69620253165,2011.43037974684,2011.16455696203,2010.89873417722,2010.63291139241,2010.36708860759,2010.10126582278,2009.83544303797,2009.56962025316,2009.30379746835,2009.03797468354,2008.77215189873,2008.50632911392,2008.24050632911,2007.9746835443,2007.70886075949,2007.44303797468,2007.17721518987,2006.91139240506,2006.64556962025,2006.37974683544,2006.11392405063,2005.84810126582,2005.58227848101,2005.3164556962,2005.05063291139,2004.78481012658,2004.51898734177,2004.25316455696,2003.98734177215,2003.72151898734,2003.45569620253,2003.18987341772,2002.92405063291,2002.6582278481,2002.39240506329,2002.12658227848,2001.86075949367,2001.59493670886,2001.32911392405,2001.06329113924,2000.79746835443,2000.53164556962,2000.26582278481,2000,2000],"y":[513.416643941772,511.651962866488,509.885717198382,508.11781579468,506.348161077283,504.576648543878,502.803166246499,501.02759423735,499.249803982273,497.469657743205,495.687007931997,493.90169643939,492.113553944776,490.322399214528,488.528038399349,486.730264344425,484.928855929922,483.123577463936,481.314178155075,479.50039169771,477.681936009081,475.858513164041,474.0298095797,472.19549650822,470.355230900681,468.508656707721,466.655406682081,464.795104743388,462.927368955072,461.051815146013,459.168061184585,457.275731879854,455.374464444453,453.463914407763,451.543761819664,449.613717538744,447.673529359694,445.722987708755,443.761930628719,441.790247790015,439.8078833031,437.81483716797,435.811165274173,433.796977951281,431.772437156496,429.737752463581,427.693176077848,425.638997140707,423.575535602275,421.503135933172,419.422160920769,417.332985755995,415.235992570474,413.131565535336,411.020086587144,408.901931806269,406.777468439977,404.647052537626,402.511027148132,400.36972101934,398.223447734134,396.072505217666,393.917175552694,391.757725044849,389.594404485518,387.427449566609,385.257081407957,383.083507164373,380.906920685151,378.727503203925,376.545424041301,374.360841306536,372.17390258778,369.984745623098,367.793498946643,365.600282506215,363.405208249778,361.208380679647,359.009897373918,356.809849475371,356.809849475371,380.366356058225,382.13103713351,383.897282801616,385.665184205317,387.434838922715,389.206351456122,390.979833753498,392.755405762647,394.533196017726,396.313342256792,398.095992068,399.881303560609,401.669446055222,403.460600785469,405.254961600648,407.052735655574,408.854144070075,410.659422536062,412.468821844924,414.282608302287,416.101063990916,417.924486835957,419.753190420297,421.587503491778,423.427769099317,425.274343292277,427.127593317916,428.987895256609,430.855631044928,432.731184853985,434.614938815413,436.507268120146,438.408535555545,440.319085592235,442.239238180334,444.169282461253,446.109470640303,448.060012291242,450.02106937128,451.992752209982,453.975116696898,455.968162832029,457.971834725824,459.986022048717,462.010562843502,464.045247536417,466.08982392215,468.144002859291,470.207464397725,472.279864066825,474.360839079229,476.450014244005,478.547007429523,480.651434464662,482.762913412854,484.881068193728,487.005531560021,489.135947462372,491.271972851866,493.413278980657,495.559552265863,497.710494782333,499.865824447304,502.025274955149,504.188595514481,506.355550433388,508.525918592041,510.699492835625,512.876079314849,515.055496796073,517.237575958697,519.422158693464,521.609097412218,523.7982543769,525.989501053357,528.182717493783,530.37779175022,532.574619320351,534.773102626079,536.973150524627,513.416643941772],"text":["year: 2000.000<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 525.1949<br />country: United States","year: 2000.266<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 523.2125<br />country: United States","year: 2000.532<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 521.2302<br />country: United States","year: 2000.797<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 519.2478<br />country: United States","year: 2001.063<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 517.2654<br />country: United States","year: 2001.329<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 515.2831<br />country: United States","year: 2001.595<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 513.3007<br />country: United States","year: 2001.861<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 511.3183<br />country: United States","year: 2002.127<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 509.3360<br />country: United States","year: 2002.392<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 507.3536<br />country: United States","year: 2002.658<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 505.3713<br />country: United States","year: 2002.924<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 503.3889<br />country: United States","year: 2003.190<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 501.4065<br />country: United States","year: 2003.456<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 499.4242<br />country: United States","year: 2003.722<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 497.4418<br />country: United States","year: 2003.987<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 495.4594<br />country: United States","year: 2004.253<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 493.4771<br />country: United States","year: 2004.519<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 491.4947<br />country: United States","year: 2004.785<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 489.5123<br />country: United States","year: 2005.051<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 487.5300<br />country: United States","year: 2005.316<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 485.5476<br />country: United States","year: 2005.582<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 483.5652<br />country: United States","year: 2005.848<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 481.5829<br />country: United States","year: 2006.114<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 479.6005<br />country: United States","year: 2006.380<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 477.6181<br />country: United States","year: 2006.646<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 475.6358<br />country: United States","year: 2006.911<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 473.6534<br />country: United States","year: 2007.177<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 471.6711<br />country: United States","year: 2007.443<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 469.6887<br />country: United States","year: 2007.709<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 467.7063<br />country: United States","year: 2007.975<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 465.7240<br />country: United States","year: 2008.241<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 463.7416<br />country: United States","year: 2008.506<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 461.7592<br />country: United States","year: 2008.772<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 459.7769<br />country: United States","year: 2009.038<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 457.7945<br />country: United States","year: 2009.304<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 455.8121<br />country: United States","year: 2009.570<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 453.8298<br />country: United States","year: 2009.835<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 451.8474<br />country: United States","year: 2010.101<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 449.8650<br />country: United States","year: 2010.367<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 447.8827<br />country: United States","year: 2010.633<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 445.9003<br />country: United States","year: 2010.899<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 443.9180<br />country: United States","year: 2011.165<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 441.9356<br />country: United States","year: 2011.430<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 439.9532<br />country: United States","year: 2011.696<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 437.9709<br />country: United States","year: 2011.962<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 435.9885<br />country: United States","year: 2012.228<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 434.0061<br />country: United States","year: 2012.494<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 432.0238<br />country: United States","year: 2012.759<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 430.0414<br />country: United States","year: 2013.025<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 428.0590<br />country: United States","year: 2013.291<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 426.0767<br />country: United States","year: 2013.557<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 424.0943<br />country: United States","year: 2013.823<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 422.1119<br />country: United States","year: 2014.089<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 420.1296<br />country: United States","year: 2014.354<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 418.1472<br />country: United States","year: 2014.620<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 416.1649<br />country: United States","year: 2014.886<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 414.1825<br />country: United States","year: 2015.152<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 412.2001<br />country: United States","year: 2015.418<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 410.2178<br />country: United States","year: 2015.684<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 408.2354<br />country: United States","year: 2015.949<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 406.2530<br />country: United States","year: 2016.215<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 404.2707<br />country: United States","year: 2016.481<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 402.2883<br />country: United States","year: 2016.747<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 400.3059<br />country: United States","year: 2017.013<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 398.3236<br />country: United States","year: 2017.278<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 396.3412<br />country: United States","year: 2017.544<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 394.3588<br />country: United States","year: 2017.810<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 392.3765<br />country: United States","year: 2018.076<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 390.3941<br />country: United States","year: 2018.342<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 388.4117<br />country: United States","year: 2018.608<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 386.4294<br />country: United States","year: 2018.873<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 384.4470<br />country: United States","year: 2019.139<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 382.4647<br />country: United States","year: 2019.405<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 380.4823<br />country: United States","year: 2019.671<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 378.4999<br />country: United States","year: 2019.937<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 376.5176<br />country: United States","year: 2020.203<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 374.5352<br />country: United States","year: 2020.468<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 372.5528<br />country: United States","year: 2020.734<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 370.5705<br />country: United States","year: 2021.000<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 368.5881<br />country: United States","year: 2021.000<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 368.5881<br />country: United States","year: 2021.000<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 368.5881<br />country: United States","year: 2020.734<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 370.5705<br />country: United States","year: 2020.468<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 372.5528<br />country: United States","year: 2020.203<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 374.5352<br />country: United States","year: 2019.937<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 376.5176<br />country: United States","year: 2019.671<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 378.4999<br />country: United States","year: 2019.405<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 380.4823<br />country: United States","year: 2019.139<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 382.4647<br />country: United States","year: 2018.873<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 384.4470<br />country: United States","year: 2018.608<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 386.4294<br />country: United States","year: 2018.342<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 388.4117<br />country: United States","year: 2018.076<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 390.3941<br />country: United States","year: 2017.810<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 392.3765<br />country: United States","year: 2017.544<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 394.3588<br />country: United States","year: 2017.278<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 396.3412<br />country: United States","year: 2017.013<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 398.3236<br />country: United States","year: 2016.747<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 400.3059<br />country: United States","year: 2016.481<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 402.2883<br />country: United States","year: 2016.215<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 404.2707<br />country: United States","year: 2015.949<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 406.2530<br />country: United States","year: 2015.684<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 408.2354<br />country: United States","year: 2015.418<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 410.2178<br />country: United States","year: 2015.152<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 412.2001<br />country: United States","year: 2014.886<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 414.1825<br />country: United States","year: 2014.620<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 416.1649<br />country: United States","year: 2014.354<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 418.1472<br />country: United States","year: 2014.089<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 420.1296<br />country: United States","year: 2013.823<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 422.1119<br />country: United States","year: 2013.557<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 424.0943<br />country: United States","year: 2013.291<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 426.0767<br />country: United States","year: 2013.025<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 428.0590<br />country: United States","year: 2012.759<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 430.0414<br />country: United States","year: 2012.494<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 432.0238<br />country: United States","year: 2012.228<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 434.0061<br />country: United States","year: 2011.962<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 435.9885<br />country: United States","year: 2011.696<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 437.9709<br />country: United States","year: 2011.430<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 439.9532<br />country: United States","year: 2011.165<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 441.9356<br />country: United States","year: 2010.899<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 443.9180<br />country: United States","year: 2010.633<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 445.9003<br />country: United States","year: 2010.367<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 447.8827<br />country: United States","year: 2010.101<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 449.8650<br />country: United States","year: 2009.835<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 451.8474<br />country: United States","year: 2009.570<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 453.8298<br />country: United States","year: 2009.304<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 455.8121<br />country: United States","year: 2009.038<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 457.7945<br />country: United States","year: 2008.772<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 459.7769<br />country: United States","year: 2008.506<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 461.7592<br />country: United States","year: 2008.241<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 463.7416<br />country: United States","year: 2007.975<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 465.7240<br />country: United States","year: 2007.709<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 467.7063<br />country: United States","year: 2007.443<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 469.6887<br />country: United States","year: 2007.177<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 471.6711<br />country: United States","year: 2006.911<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 473.6534<br />country: United States","year: 2006.646<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 475.6358<br />country: United States","year: 2006.380<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 477.6181<br />country: United States","year: 2006.114<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 479.6005<br />country: United States","year: 2005.848<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 481.5829<br />country: United States","year: 2005.582<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 483.5652<br />country: United States","year: 2005.316<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 485.5476<br />country: United States","year: 2005.051<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 487.5300<br />country: United States","year: 2004.785<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 489.5123<br />country: United States","year: 2004.519<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 491.4947<br />country: United States","year: 2004.253<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 493.4771<br />country: United States","year: 2003.987<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 495.4594<br />country: United States","year: 2003.722<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 497.4418<br />country: United States","year: 2003.456<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 499.4242<br />country: United States","year: 2003.190<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 501.4065<br />country: United States","year: 2002.924<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 503.3889<br />country: United States","year: 2002.658<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 505.3713<br />country: United States","year: 2002.392<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 507.3536<br />country: United States","year: 2002.127<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 509.3360<br />country: United States","year: 2001.861<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 511.3183<br />country: United States","year: 2001.595<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 513.3007<br />country: United States","year: 2001.329<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 515.2831<br />country: United States","year: 2001.063<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 517.2654<br />country: United States","year: 2000.797<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 519.2478<br />country: United States","year: 2000.532<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 521.2302<br />country: United States","year: 2000.266<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 523.2125<br />country: United States","year: 2000.000<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 525.1949<br />country: United States","year: 2000.000<br />carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour: 525.1949<br />country: United States"],"type":"scatter","mode":"lines","line":{"width":3.77952755905512,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(153,153,153,0.4)","hoveron":"points","hoverinfo":"x+y","name":"United States","legendgroup":"United States","showlegend":false,"xaxis":"x","yaxis":"y","frame":null}],"layout":{"margin":{"t":26.2283105022831,"r":7.30593607305936,"b":40.1826484018265,"l":43.1050228310502},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1998.95,2022.05],"tickmode":"array","ticktext":["2000","2005","2010","2015","2020"],"tickvals":[2000,2005,2010,2015,2020],"categoryorder":"array","categoryarray":["2000","2005","2010","2015","2020"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[339.121492473769,546.394658050858],"tickmode":"array","ticktext":["350","400","450","500"],"tickvals":[350,400,450,500],"categoryorder":"array","categoryarray":["350","400","450","500"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"carbon_intensity_of_electricity_production_in_grams_per_kilowatt_hour","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"5582ecadefd":{"x":{},"y":{},"colour":{},"size":{},"type":"scatter"},"558283d6cd7":{"x":{},"y":{},"colour":{}}},"cur_data":"5582ecadefd","visdat":{"5582ecadefd":["function (y) ","x"],"558283d6cd7":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+
+</div>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
